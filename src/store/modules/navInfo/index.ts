@@ -20,11 +20,25 @@ const state: INavInfo = {
         {label: 'JavaScript', value: '3'},
         {label: 'Html', value: '4'},
         {label: 'Vue', value: '5'},
+        {label: 'Git', value: '6'},
+        {label: 'linux', value: '7'}
     ],
     navDetailInfo: {
         '1': [
             {label: '半仪表盘', path: 'half-hashboard'},
             {label: '简单柱状图', path: 'simple-bar'}
+        ],
+        '2': [
+            {label: '两列布局', path: 'twoLayout'},
+            {label: '三列布局', path: 'threeLayout'},
+            {label: '圣杯布局', path: 'grailLayout'},
+            {label: '双飞翼布局', path: 'dobuleWingsLayout'}
+        ],
+        '6': [
+            {label: '常用命令', path: 'commonComandGit'}
+        ],
+        '7': [
+            {label: '常用命令', path: 'commonCommandLinux'}
         ]
     },
     currentNav: '1'
