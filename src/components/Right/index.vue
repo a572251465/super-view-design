@@ -16,5 +16,6 @@ export default defineComponent({
     .right {
         width: 100%;
         height: 100%;
+        margin-right: 5px;
     }
 </style>

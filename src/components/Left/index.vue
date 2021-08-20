@@ -37,7 +37,8 @@ export default defineComponent({
         // -- 监听当前的导航信息
         watch(() => store.state.navInfo.currentNav, (nav: string) => {
             const currentNavInfo = navDetailInfo[nav] as (IRouteDetail[])
-            if (!currentNavInfo) {
+            if (!currentNavInfo || currentNavInfo.length === 0) {
+                state.currentNavInfo = []
                 return false
             }
             state.currentNavInfo = currentNavInfo
@@ -75,9 +76,9 @@ export default defineComponent({
         }
 
         &-detail {
-            height: 60px;
-            line-height: 60px;
-            padding: 0px 20px 0px 40px;
+            height: 40px;
+            line-height: 40px;
+            padding: 0px 20px;
             cursor: pointer;
             span {
                 font-size: 14px;

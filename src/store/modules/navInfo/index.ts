@@ -23,7 +23,8 @@ const state: INavInfo = {
     ],
     navDetailInfo: {
         '1': [
-            {label: '半仪表盘', path: 'half-hashboard'}
+            {label: '半仪表盘', path: 'half-hashboard'},
+            {label: '简单柱状图', path: 'simple-bar'}
         ]
     },
     currentNav: '1'
