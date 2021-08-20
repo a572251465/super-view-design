@@ -8,7 +8,7 @@ export interface IRootState {
 
 export default createStore({
   plugins: [
-    createPersistedState()
+    createPersistedState({storage: window.sessionStorage})
   ],
   modules: {
     navInfo: {namespaced: true, ...navInfo}

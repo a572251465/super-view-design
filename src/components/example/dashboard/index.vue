@@ -51,7 +51,7 @@ export default defineComponent({
 
         .outer {
             width: $size;
-            height: calc($size / 2);
+            height: 200px;
             overflow: hidden;
             background: rgb(16, 12, 42);
             position: relative;
