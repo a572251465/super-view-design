@@ -1,0 +1,71 @@
+import {IRootState} from '@/store'
+import { ActionTree, GetterTree, MutationTree } from 'vuex'
+import { SETTING_CURRENT_NAV } from './method-types'
+
+export interface IRouteDetail {
+    label: string,
+    path: string
+}
+export interface INavInfo {
+    navList: {label: string, value: string}[],
+    navDetailInfo: {[value: string]: IRouteDetail[]},
+    currentNav: string
+}
+
+// -- 表示状态
+const state: INavInfo = {
+    navList: [
+        {label: '可视化', value: '1'},
+        {label: 'Css', value: '2'},
+        {label: 'JavaScript', value: '3'},
+        {label: 'Html', value: '4'},
+        {label: 'Vue', value: '5'},
+    ],
+    navDetailInfo: {
+        '1': [
+            {label: '半仪表盘', path: 'half-hashboard'}
+        ]
+    },
+    currentNav: '1'
+}
+
+// -- getters
+const getters: GetterTree<INavInfo, IRootState> = {
+    navList: state => state.navList,
+    navDetailInfo: state => state.navDetailInfo
+}
+
+// -- mutations
+const mutations: MutationTree<INavInfo> = {
+    /**
+     * @author lihh
+     * @description 点击设置当前导航
+     * @param state 数据状态中心
+     * @param nav 当前导航信息
+     */
+    [SETTING_CURRENT_NAV](state, nav) {
+        state.currentNav = nav
+    }
+}
+
+// -- actions
+const actions: ActionTree<INavInfo, IRootState> = {
+
+    /**
+     * @author lihh
+     * @description 设置当前导航
+     * @param commit 提交mutation事件
+     * @param nav 表示导航信息
+     */
+    [SETTING_CURRENT_NAV]({commit}, nav: string) {
+        commit(SETTING_CURRENT_NAV, nav)
+    }
+}
+
+const navInfo = {
+    state,
+    getters,
+    mutations,
+    actions
+}
+export default navInfo

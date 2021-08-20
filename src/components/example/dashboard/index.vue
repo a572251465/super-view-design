@@ -13,7 +13,7 @@
 <script lang = 'ts'>
 import { defineComponent, getCurrentInstance, onMounted } from "vue";
 import {getOptions} from './options'
-import {generatorColor} from '@/assets/js/randomColor'
+import {generatorColor} from '@/assets/js/gradualColor'
 
 export default defineComponent({
     name: 'dashboard',

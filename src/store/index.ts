@@ -1,12 +1,16 @@
 import { createStore } from 'vuex'
+import navInfo, {INavInfo} from './modules/navInfo'
+import createPersistedState from "vuex-persistedstate"
+
+export interface IRootState {
+  navInfo: INavInfo
+}
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
+  plugins: [
+    createPersistedState()
+  ],
   modules: {
+    navInfo: {namespaced: true, ...navInfo}
   }
 })
