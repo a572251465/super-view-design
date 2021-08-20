@@ -59,7 +59,7 @@ export default defineComponent({
             &-content {
                 position: absolute;
                 left: 50%;
-                top: 35%;
+                top: 60%;
                 transform: translate(-50%, -50%);
                 font-size: 36px;
 
