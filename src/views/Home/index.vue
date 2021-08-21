@@ -32,8 +32,9 @@ export default defineComponent({
             proxy?.$notify({
                 type: 'success',
                 title: '友情提示',
+                position: 'bottom-right',
                 message: '可以点击导航每个模块进行学习(例如：可视化)',
-                showClose: false
+                showClose: true
             })
         })
     }

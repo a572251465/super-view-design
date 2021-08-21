@@ -16,3 +16,7 @@ html, body, #app {
 .full-bk {
     background: #100c2a;
 }
+
+ul, li {
+    list-style: none;
+}

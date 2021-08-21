@@ -35,7 +35,7 @@ const state: INavInfo = {
             {label: '双飞翼布局', path: 'dobuleWingsLayout'}
         ],
         '6': [
-            {label: '常用命令', path: 'commonComandGit'}
+            {label: '常用命令', path: 'commonCommandGit'}
         ],
         '7': [
             {label: '常用命令', path: 'commonCommandLinux'}

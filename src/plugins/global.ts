@@ -1,10 +1,12 @@
 import {App} from 'vue'
 import * as echarts from 'echarts'
-import {ElIcon, ElNotification} from 'element-plus'
+import {ElIcon, ElMessage, ElNotification, ElScrollbar} from 'element-plus'
 import 'element-plus/lib/theme-chalk/index.css'
 const components = [
     ElNotification,
-    ElIcon
+    ElIcon,
+    ElScrollbar,
+    ElMessage
 ]
 
 /**

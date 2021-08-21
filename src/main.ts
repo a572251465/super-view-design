@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import {installGlobal} from '@/plugins/global'
 import * as echarts from 'echarts'
-import {ElNotification} from 'element-plus'
+import {ElMessage, ElNotification} from 'element-plus'
 
 createApp(App).use(installGlobal).use(store).use(router).mount('#app')
 
@@ -14,6 +14,7 @@ import '@/assets/css/common.css'
 declare module '@vue/runtime-core' {
     interface ComponentCustomProperties {
         $echarts: typeof echarts
-        $notify: typeof ElNotification
+        $notify: typeof ElNotification,
+        $message: typeof ElMessage
     }
 }
