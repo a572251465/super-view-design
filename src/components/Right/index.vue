@@ -4,12 +4,12 @@
             <template #default>
                 <router-view v-slot="{ Component, route }" name = 'main'>
                     <transition :name="route.meta.transition || 'fade'" mode="out-in">
-                        <!-- <keep-alive> -->
+                        <keep-alive>
                             <component
                                 :is="Component"
                                 :key="route.meta.usePathKey ? route.path : undefined"
                             />
-                        <!-- </keep-alive> -->
+                        </keep-alive>
                     </transition>
                 </router-view>
             </template>
