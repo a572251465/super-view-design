@@ -3,6 +3,7 @@ const Dashboard = () => import('@/views/Dashboard/index.vue')
 const SimpleBar = () => import('@/views/SimpleBar/index.vue')
 const NotFound = () => import('@/views/NotFound/index.vue')
 const CommonCommandGit = () => import('@/views/CommonCommandGit/index.vue')
+const CommonCommandLinux = () => import('@/views/CommonCommandLinux/index.vue')
 import Home from '@/views/Home/index.vue'
 
 const routes: Array<RouteRecordRaw> = [
@@ -30,6 +31,13 @@ const routes: Array<RouteRecordRaw> = [
         name: 'commonCommandGit',
         components: {
           main: CommonCommandGit
+        }
+      },
+      {
+        path: '/commonCommandLinux',
+        name: 'commonCommandLinux',
+        components: {
+          main: CommonCommandLinux
         }
       },
       {

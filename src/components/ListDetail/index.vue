@@ -36,6 +36,9 @@ export default defineComponent({
 
         // -- 复制内容事件
         const copyHandle = (detail: string) => {
+            if (detail.startsWith('$')) {
+                detail = detail.replace(/^\$\s+/gi, '')
+            }
             const inputDom: HTMLInputElement = proxy?.$refs['copyInput'] as HTMLInputElement
             copyTxt(inputDom, detail).then(() => {
                 proxy?.$message.success('复制成功')
