@@ -41,7 +41,8 @@ const gitContent3: IListTemplate = {
         {detail: '$  git rm --cached <文件名>', notes: '将缓存区的文件删除'},
         {detail: '$  git reset --hard <版本号>', notes: '从版本库恢复某个版本'},
         {detail: '$  git reflog', notes: '查看历史版本'},
-        {detail: '$  git remote add origin <url>', notes: '添加某个git地址'}
+        {detail: '$  git remote add origin <url>', notes: '添加某个git地址'},
+        {detail: '$  git push -u origin master', notes: '提交到代码到主分支'}
     ]
 }
 
@@ -57,7 +58,8 @@ const gitContent4: IListTemplate = {
         {detail: '$  git stash', notes: '进行工作区的代码暂存'},
         {detail: '$  git stash pop', notes: '回退暂存区代码'},
         {detail: '$  git mege <分支名称>', notes: '进行分支合并, 会出现分叉合并'},
-        {detail: '$  git rebase <分支名称>', notes: '进行分支合并, 不会出现分叉合并'}
+        {detail: '$  git rebase <分支名称>', notes: '进行分支合并, 不会出现分叉合并'},
+        {detail: '$  git remote update origin --prune', notes: '将服务上分支更新到本地(--可能出现本地没有分支，但是服务上有)'}
     ]
 }
 

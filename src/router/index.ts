@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 const Dashboard = () => import('@/views/Dashboard/index.vue')
 const SimpleBar = () => import('@/views/SimpleBar/index.vue')
+const SimpleLine = () => import('@/views/SimpleLine/index.vue')
 const NotFound = () => import('@/views/NotFound/index.vue')
 const CommonCommandGit = () => import('@/views/CommonCommandGit/index.vue')
 const CommonCommandLinux = () => import('@/views/CommonCommandLinux/index.vue')
@@ -24,6 +25,13 @@ const routes: Array<RouteRecordRaw> = [
         name: 'simple-bar',
         components: {
           main: SimpleBar
+        }
+      },
+      {
+        path: '/simple-line',
+        name: 'simple-line',
+        components: {
+          main: SimpleLine
         }
       },
       {

@@ -8,6 +8,7 @@
                 <list-detail :content="linuxContent3"></list-detail>
                 <list-detail :content="linuxContent4"></list-detail>
                 <list-detail :content="linuxContent5"></list-detail>
+                <list-detail :content="linuxContent6"></list-detail>
             </list-template>
         </el-scrollbar>
     </div>
@@ -17,7 +18,7 @@
 import { defineComponent } from "vue"
 import ListTemplate from '@/components/ListTemplate/index.vue'
 import ListDetail from '@/components/ListDetail/index.vue'
-import {linuxContent, linuxContent1, linuxContent2, linuxContent3, linuxContent4, linuxContent5} from './data'
+import {linuxContent, linuxContent1, linuxContent2, linuxContent3, linuxContent4, linuxContent5, linuxContent6} from './data'
 
 export default defineComponent({
     name: 'commonCommandLinux',
@@ -32,7 +33,8 @@ export default defineComponent({
             linuxContent2,
             linuxContent3,
             linuxContent4,
-            linuxContent5
+            linuxContent5,
+            linuxContent6
         }
     }
 })

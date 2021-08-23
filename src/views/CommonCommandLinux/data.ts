@@ -4,6 +4,7 @@ const linuxContent: IListTemplate = {
     title: '常用命令',
     content: [
         {detail: '$ ll', notes: '查询当前目录所有文件的详情'},
+        {detail: '$  echo $PATH', notes: '打印环境变量'},
         {detail: '$ ls', notes: '展示当前目录下文件名称'},
         {detail: '$ pwd', notes: '表示输出当前文件目录'},
         {detail: '$ mkdir <文件名>', notes: '创建目录'},
@@ -67,11 +68,21 @@ const linuxContent5: IListTemplate = {
     ]
 }
 
+const linuxContent6: IListTemplate = {
+    title: '运行在window的liunx命令',
+    content: [
+        {detail: '$  code .', notes: '以当前目录为基准，用vscode打开'},
+        {detail: 'explorer .', notes: '以当前目录为基准, 打开资源管理器'},
+        {detail: 'where <命令>', notes: '查询全局命令的安装位置'}
+    ]
+}
+
 export {
     linuxContent,
     linuxContent1,
     linuxContent2,
     linuxContent3,
     linuxContent4,
-    linuxContent5
+    linuxContent5,
+    linuxContent6
 }

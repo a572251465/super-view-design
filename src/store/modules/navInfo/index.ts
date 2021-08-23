@@ -26,7 +26,9 @@ const state: INavInfo = {
     navDetailInfo: {
         '1': [
             {label: '半仪表盘', path: 'half-hashboard'},
-            {label: '简单柱状图', path: 'simple-bar'}
+            {label: '简单柱状图', path: 'simple-bar'},
+            {label: '简单折线图', path: 'simple-line'},
+            {label: '刻度饼状图', path: 'scale-pie'}
         ],
         '2': [
             {label: '两列布局', path: 'twoLayout'},
