@@ -1,14 +1,42 @@
 import { IAddressDetail } from "@/components/AddressDetail/types";
 
 const addressData: IAddressDetail = {
-  title: "cookie共享问题",
+  title: "SSO相关的登录机制",
   grade: 5,
   children: [
     {
       address: "https://juejin.cn/post/6845166891393089544#heading-4",
-      notes: "掘金上关于浏览器间cookie共享问题",
+      notes: "掘金上关于SSO相关的登录机制",
     },
   ],
 };
 
-export default addressData;
+const addressData1: IAddressDetail = {
+  title: "cookie的跨域共享",
+  grade: 5,
+  children: [
+    {
+      address: "https://www.cnblogs.com/hujunzheng/p/5744755.html",
+    },
+  ],
+};
+
+const addressData2: IAddressDetail = {
+  title: "prettier + eslint 最佳实践",
+  grade: 4,
+  children: [
+    {
+      address:
+        "https://www.meteorlxy.cn/posts/2019/08/05/understand-and-use-prettier.html",
+    },
+    {
+      address: "https://juejin.cn/post/6915378605459521543",
+    },
+    {
+      address: "https://www.yuque.com/lihaohao-f0jle/fzhxzo/glgphl",
+      notes: "重要!!!重要!!!重要!!!一定看",
+    },
+  ],
+};
+
+export { addressData, addressData1, addressData2 };

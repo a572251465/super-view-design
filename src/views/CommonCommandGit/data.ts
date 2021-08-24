@@ -47,6 +47,42 @@ const gitContent3: IListTemplate = {
     { detail: "$  git reflog", notes: "查看历史版本" },
     { detail: "$  git remote add origin <url>", notes: "添加某个git地址" },
     { detail: "$  git push -u origin master", notes: "提交到代码到主分支" },
+    {
+      detail: "$  git rm --cached [file]",
+      notes: "停止追踪指定文件, 但是文件保留在暂存区",
+    },
+    {
+      detail: "$  git mv [name_before] [name_after]",
+      notes: "改名文件 并且将这个改名放入暂存区",
+    },
+    {
+      detail: "$  git push origin --delete [branch-name]",
+      notes: "删除远程的分支",
+    },
+    {
+      detail: '$  git commit -v "xxx"',
+      notes: "提交时显示所有文件的diff信息",
+    },
+    {
+      detail: "$  git checkout [commit] [file]",
+      notes: "恢复某个commit的指定文件到暂存区和工作区",
+    },
+    {
+      detail: "$  git checkout .",
+      notes: "恢复暂存区的所有的文件到工作区",
+    },
+    {
+      detail: "$  git reset [file]",
+      notes: "重置暂存区的指定文件, 与上次commit保持一致，但是工作区保持不变",
+    },
+    {
+      detail: "$  git reset --hard",
+      notes: "重置暂存区和工作区，与上次的commit保持一致",
+    },
+    {
+      detail: "$  git reset [commit]",
+      notes: "重置当前分支的指针为指定的commit，同时重置暂存区，但是工作区不变",
+    },
   ],
 };
 
@@ -61,7 +97,7 @@ const gitContent4: IListTemplate = {
     { detail: "$  git log --online --graph", notes: "显示提交过程" },
     { detail: "$  git stash", notes: "进行工作区的代码暂存" },
     { detail: "$  git stash pop", notes: "回退暂存区代码" },
-    { detail: "$  git mege <分支名称>", notes: "进行分支合并, 会出现分叉合并" },
+    { detail: "$  git mege <分支名称>", notes: "合并指定分支到当前的分支" },
     {
       detail: "$  git rebase <分支名称>",
       notes: "进行分支合并, 不会出现分叉合并",
@@ -69,6 +105,14 @@ const gitContent4: IListTemplate = {
     {
       detail: "$  git remote update origin --prune",
       notes: "将服务上分支更新到本地(--可能出现本地没有分支，但是服务上有)",
+    },
+    {
+      detail: "$  git branch -r",
+      notes: "列举出远程中所有的分支",
+    },
+    {
+      detail: "$  git mv [name_before] [name_after]",
+      notes: "改名文件 并且将这个改名放入暂存区",
     },
   ],
 };

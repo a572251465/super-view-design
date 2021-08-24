@@ -56,6 +56,7 @@ export default defineComponent({
   background: #f5f5f5;
   box-shadow: 3px 3px 3px #ccc;
   width: 100%;
+  margin-top: 30px;
 
   .title {
     height: 50px;
@@ -113,6 +114,7 @@ export default defineComponent({
         color: #47a1ff;
         font-size: 12px;
         padding: 5px 10px;
+        cursor: pointer;
         margin-left: 30px;
       }
     }

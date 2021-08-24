@@ -35,6 +35,10 @@ const linuxContent: IListTemplate = {
       detail: "$ chmod <权限> <文件>",
       notes: "修改权限 r => 4 w => 2 x => 1 777 表示最高权限",
     },
+    {
+      detail: "$  touch [file]",
+      notes: "新建文件",
+    },
   ],
 };
 

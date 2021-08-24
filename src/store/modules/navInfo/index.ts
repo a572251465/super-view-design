@@ -22,7 +22,7 @@ const navInfoState: INavInfo = {
     { label: "Vue", value: "5" },
     { label: "Git", value: "6" },
     { label: "linux", value: "7" },
-    { label: "常用地址", value: "8" },
+    { label: "知识文章", value: "8" },
   ],
   navDetailInfo: {
     "1": [
