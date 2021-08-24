@@ -5,19 +5,17 @@
  * @param value 复制的值
  * @returns Promise
  */
-const copyTxt = (dom: HTMLInputElement, value: string): Promise<boolean> => {
-    return new Promise((resolve, reject) => {
-        if (!Reflect.has(document, 'execCommand')) {
-            reject(false)
-        } else {
-            dom.value = value
-            dom.select()
-            document.execCommand('Copy')
-            resolve(true)
-        }
-    })
-}
+const copyTxt = (dom: HTMLInputElement, value: string): Promise<boolean> =>
+  new Promise((resolve, reject) => {
+    if (!Reflect.has(document, "execCommand")) {
+      reject(new Error(""));
+    } else {
+      const el: HTMLInputElement = dom;
+      el.value = value;
+      el.select();
+      document.execCommand("Copy");
+      resolve(true);
+    }
+  });
 
-export {
-    copyTxt
-}
+export default copyTxt;

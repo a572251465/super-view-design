@@ -5,19 +5,24 @@
   "scripts": {
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "eslint --ext .js,.ts,.vue . && prettier --check .",
+    "lint:fix": "eslint --fix --ext .js,.ts,.vue . && prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@element-plus/icons": "^0.0.11",
     "core-js": "^3.6.5",
     "echarts": "^5.1.2",
     "element-plus": "^1.0.2-beta.71",
+    "eslint-config-airbnb-base": "^14.2.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0",
     "vuex-persistedstate": "^4.0.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-angular": "^13.1.0",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -29,9 +34,20 @@
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/eslint-config-typescript": "^7.0.0",
     "eslint": "^6.7.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-webpack": "^0.13.1",
+    "eslint-plugin-import": "^2.24.1",
     "eslint-plugin-vue": "^7.0.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "typescript": "~4.1.5"
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue,ts}": [
+      "yarn lint"
+    ]
   }
 }

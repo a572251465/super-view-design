@@ -1,22 +1,25 @@
-html, body, #app {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .full-width {
-    width: 100%;
+  width: 100%;
 }
 
 .full-height {
-    height: 100%;
+  height: 100%;
 }
 
 .full-bk {
-    background: #100c2a;
+  background: #100c2a;
 }
 
-ul, li {
-    list-style: none;
+ul,
+li {
+  list-style: none;
 }

@@ -1,23 +1,22 @@
 <template>
   <div class="notFound">
-    <img :src = "workImg" alt = "工作中">
+    <img :src="workImg" alt="工作中" />
     <h3>沉迷学习中......</h3>
   </div>
 </template>
 
-<script lang = "ts">
-import { defineComponent } from 'vue'
-import workImg from '@/assets/images/working.png'
+<script lang="ts">
+import { defineComponent } from "vue";
+import workImg from "@/assets/images/working.png";
 
 export default defineComponent({
-  name: 'not-found',
+  name: "not-found",
   setup() {
-
     return {
-      workImg
-    }
-  }
-})
+      workImg,
+    };
+  },
+});
 </script>
 
 <style lang="scss" scoped>
