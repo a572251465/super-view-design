@@ -21,7 +21,8 @@ const state: INavInfo = {
         {label: 'Html', value: '4'},
         {label: 'Vue', value: '5'},
         {label: 'Git', value: '6'},
-        {label: 'linux', value: '7'}
+        {label: 'linux', value: '7'},
+        {label: '常用地址', value: '8'}
     ],
     navDetailInfo: {
         '1': [
@@ -41,6 +42,9 @@ const state: INavInfo = {
         ],
         '7': [
             {label: '常用命令', path: 'commonCommandLinux'}
+        ],
+        '8': [
+            {label: '常用地址', path: 'commonly-address'}
         ]
     },
     currentNav: '1'

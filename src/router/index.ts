@@ -5,6 +5,7 @@ const SimpleLine = () => import('@/views/SimpleLine/index.vue')
 const NotFound = () => import('@/views/NotFound/index.vue')
 const CommonCommandGit = () => import('@/views/CommonCommandGit/index.vue')
 const CommonCommandLinux = () => import('@/views/CommonCommandLinux/index.vue')
+const CommonlyAddress = () => import('@/views/CommonlyAddress/index.vue')
 import Home from '@/views/Home/index.vue'
 
 const routes: Array<RouteRecordRaw> = [
@@ -46,6 +47,13 @@ const routes: Array<RouteRecordRaw> = [
         name: 'commonCommandLinux',
         components: {
           main: CommonCommandLinux
+        }
+      },
+      {
+        path: '/commonly-address',
+        name: 'commonly-address',
+        components: {
+          main: CommonlyAddress
         }
       },
       {

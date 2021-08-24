@@ -20,7 +20,7 @@ export default defineComponent({
 
     .list-template {
         height: 100%;
-        max-width: 900px;
+        max-width: 1000px;
         min-width: 400px;
         margin: 0px auto;
     }
