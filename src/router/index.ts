@@ -9,6 +9,8 @@ const NotFound = () => import("@/views/NotFound/index.vue");
 const CommonCommandGit = () => import("@/views/CommonCommandGit/index.vue");
 const CommonCommandLinux = () => import("@/views/CommonCommandLinux/index.vue");
 const CommonlyAddress = () => import("@/views/CommonlyAddress/index.vue");
+const CssWorld = () => import("@/views/CssWorld/index.vue");
+const VueWorld = () => import("@/views/VueWorld/index.vue");
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -63,6 +65,20 @@ const routes: Array<RouteRecordRaw> = [
         name: "scale-pie",
         components: {
           main: ScalePie,
+        },
+      },
+      {
+        path: "/css-world",
+        name: "css-world",
+        components: {
+          main: CssWorld,
+        },
+      },
+      {
+        path: "/vue-world",
+        name: "vue-world",
+        components: {
+          main: VueWorld,
         },
       },
       {

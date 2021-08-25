@@ -1,6 +1,7 @@
 interface IDetail {
   address: string;
   notes?: string;
+  isImportant?: boolean;
 }
 
 export interface IAddressDetail {

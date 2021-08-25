@@ -34,7 +34,8 @@ const addressData2: IAddressDetail = {
     },
     {
       address: "https://www.yuque.com/lihaohao-f0jle/fzhxzo/glgphl",
-      notes: "重要!!!重要!!!重要!!!一定看",
+      notes: "个人文章",
+      isImportant: true,
     },
   ],
 };

@@ -34,7 +34,8 @@ export default defineComponent({
         type: "success",
         title: "友情提示",
         position: "bottom-right",
-        message: "可以点击导航每个模块进行学习(例如：可视化)",
+        message:
+          "首先点击每个单元模块，如果没有对应的文章可以到【知识文章】中寻找",
         showClose: true,
       });
     });

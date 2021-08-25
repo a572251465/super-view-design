@@ -21,17 +21,25 @@
       <li v-for="item in addressInfo.children" :key="item.address">
         <i class="el-icon-star-on" :style="{ color: randomBk() }"></i>
         <a :href="item.address" target="_blank">{{ item.address }}</a>
-        <span class="content" v-show="item.notes">{{ item.notes }}</span>
-        <button>复制链接</button>
+        <span
+          class="content"
+          :class="[item.isImportant ? 'active' : '']"
+          v-show="item.notes"
+          >{{ item.notes }}</span
+        >
+        <button @click="copyText(item.address)">复制链接</button>
       </li>
     </ul>
+    <input type="text" class="copyText" ref="copy-text" />
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from "vue";
+import { defineComponent, getCurrentInstance, PropType } from "vue";
+import { ElMessage } from "element-plus";
 import { IAddressDetail } from "@/components/AddressDetail/types";
 import randomBk from "@/assets/js/randomBk";
+import copyTxt from "@/assets/js/copyTxt";
 
 export default defineComponent({
   name: "address-detail",
@@ -42,8 +50,19 @@ export default defineComponent({
     },
   },
   setup() {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+    const { proxy } = getCurrentInstance()!;
+    // -- 复制文本处理
+    const copyText = (text: string): void => {
+      // 获取dom元素
+      const el = proxy?.$refs["copy-text"] as HTMLInputElement;
+      copyTxt(el, text);
+      ElMessage.success("复制成功");
+    };
+
     return {
       randomBk,
+      copyText,
     };
   },
 });
@@ -57,6 +76,10 @@ export default defineComponent({
   box-shadow: 3px 3px 3px #ccc;
   width: 100%;
   margin-top: 30px;
+
+  .copyText {
+    opacity: 0;
+  }
 
   .title {
     height: 50px;
@@ -105,6 +128,14 @@ export default defineComponent({
         font-size: 12px;
         color: #666666;
         margin-left: 20px;
+      }
+
+      .active {
+        color: red;
+        font-weight: bold;
+        font-size: 14px;
+        text-shadow: 3px 3px 3px #ccc;
+        font-style: initial;
       }
 
       button {
