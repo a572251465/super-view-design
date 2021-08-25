@@ -4,6 +4,7 @@ import Home from "@/views/Home/index.vue";
 const Dashboard = () => import("@/views/Dashboard/index.vue");
 const SimpleBar = () => import("@/views/SimpleBar/index.vue");
 const SimpleLine = () => import("@/views/SimpleLine/index.vue");
+const ScalePie = () => import("@/views/ScalePie/index.vue");
 const NotFound = () => import("@/views/NotFound/index.vue");
 const CommonCommandGit = () => import("@/views/CommonCommandGit/index.vue");
 const CommonCommandLinux = () => import("@/views/CommonCommandLinux/index.vue");
@@ -55,6 +56,13 @@ const routes: Array<RouteRecordRaw> = [
         name: "commonly-address",
         components: {
           main: CommonlyAddress,
+        },
+      },
+      {
+        path: "/scale-pie",
+        name: "scale-pie",
+        components: {
+          main: ScalePie,
         },
       },
       {

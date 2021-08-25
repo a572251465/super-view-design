@@ -21,7 +21,7 @@ li {
 
 .list-template {
   height: 100%;
-  max-width: 1000px;
+  max-width: 900px;
   min-width: 400px;
   margin: 0px auto;
 }
