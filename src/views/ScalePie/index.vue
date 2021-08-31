@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import ScalePie from "@/components/example/ScalePie";
+import ScalePie from '@/components/example/ScalePie'
 </script>
 
 <style lang="scss" scoped>

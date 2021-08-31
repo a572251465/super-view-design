@@ -5,13 +5,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import SimpleLine from "@/components/example/SimpleLine/index.vue";
+import { defineComponent } from 'vue'
+import SimpleLine from '@/components/example/SimpleLine/index.vue'
 
 export default defineComponent({
-  name: "simple-line",
+  name: 'simple-line',
   components: {
-    SimpleLine,
-  },
-});
+    SimpleLine
+  }
+})
 </script>

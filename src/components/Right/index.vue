@@ -18,24 +18,24 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, toRefs } from "vue";
-import loadingPng from "@/assets/images/loading.gif";
+import { defineComponent, reactive, toRefs } from 'vue'
+import loadingPng from '@/assets/images/loading.gif'
 
 export default defineComponent({
-  name: "right",
+  name: 'right',
   setup() {
     const state = reactive({
       styles: {
         backgroundImage: `url('${loadingPng}')`,
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center center",
-      },
-    });
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center center'
+      }
+    })
     return {
-      ...toRefs(state),
-    };
-  },
-});
+      ...toRefs(state)
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

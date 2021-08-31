@@ -13,44 +13,44 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, getCurrentInstance, onMounted } from "vue";
-import ListTemplate from "@/components/ListTemplate/index.vue";
-import ListDetail from "@/components/ListDetail/index.vue";
+import { defineComponent, getCurrentInstance, onMounted } from 'vue'
+import ListTemplate from '@/components/ListTemplate/index.vue'
+import ListDetail from '@/components/ListDetail/index.vue'
 import {
   gitContent,
   gitContent1,
   gitContent2,
   gitContent3,
-  gitContent4,
-} from "@/views/CommonCommandGit/data";
+  gitContent4
+} from '@/views/CommonCommandGit/data'
 
 export default defineComponent({
-  name: "commonCommandGit",
+  name: 'commonCommandGit',
   components: {
     ListTemplate,
-    ListDetail,
+    ListDetail
   },
   setup() {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    const { proxy } = getCurrentInstance()!;
+    const { proxy } = getCurrentInstance()!
 
     // -- 组件被创建钩子函数
     onMounted(() => {
       // eslint-disable-next-line no-unused-expressions
       proxy?.$notify({
-        type: "success",
-        message: "单击可以复制哦",
-      });
-    });
+        type: 'success',
+        message: '单击可以复制哦'
+      })
+    })
     return {
       gitContent,
       gitContent1,
       gitContent2,
       gitContent3,
-      gitContent4,
-    };
-  },
-});
+      gitContent4
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

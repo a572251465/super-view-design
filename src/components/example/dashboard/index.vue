@@ -11,35 +11,35 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, getCurrentInstance, onMounted } from "vue";
-import getOptions from "./options";
-import generatorColor from "@/assets/js/gradualColor";
+import { defineComponent, getCurrentInstance, onMounted } from 'vue'
+import getOptions from './options'
+import generatorColor from '@/assets/js/gradualColor'
 
 export default defineComponent({
-  name: "dashboard",
+  name: 'dashboard',
   setup() {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    const { proxy } = getCurrentInstance()!;
-    const colorArr: string[] = generatorColor("#0394bc", "#2e51bb", 75);
+    const { proxy } = getCurrentInstance()!
+    const colorArr: string[] = generatorColor('#0394bc', '#2e51bb', 75)
     const result = Array.from({ length: 75 }).map((_, key) => {
-      const color: string = colorArr[key];
-      const ratio = (key + 1) / 100;
-      return [ratio, color];
-    }) as [number, string][];
+      const color: string = colorArr[key]
+      const ratio = (key + 1) / 100
+      return [ratio, color]
+    }) as [number, string][]
     if (result.length !== 100) {
-      result.push([1, "#062136"]);
+      result.push([1, '#062136'])
     }
 
     // -- 组件挂在钩子函数
     onMounted(() => {
-      const dom = document.querySelector("#container") as HTMLElement;
-      const myChart = proxy?.$echarts.init(dom);
+      const dom = document.querySelector('#container') as HTMLElement
+      const myChart = proxy?.$echarts.init(dom)
       if (myChart) {
-        myChart.setOption(getOptions(result));
+        myChart.setOption(getOptions(result))
       }
-    });
-  },
-});
+    })
+  }
+})
 </script>
 
 <style lang="scss" scoped>

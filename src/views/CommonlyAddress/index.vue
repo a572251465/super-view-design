@@ -12,29 +12,29 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import ListTemplate from "@/components/ListTemplate/index.vue";
-import AddressDetail from "@/components/AddressDetail/index.vue";
+import { defineComponent } from 'vue'
+import ListTemplate from '@/components/ListTemplate/index.vue'
+import AddressDetail from '@/components/AddressDetail/index.vue'
 import {
   addressData,
   addressData1,
-  addressData2,
-} from "@/views/CommonlyAddress/data";
+  addressData2
+} from '@/views/CommonlyAddress/data'
 
 export default defineComponent({
-  name: "commonCommandGit",
+  name: 'commonCommandGit',
   components: {
     ListTemplate,
-    AddressDetail,
+    AddressDetail
   },
   setup() {
     return {
       addressData,
       addressData1,
-      addressData2,
-    };
-  },
-});
+      addressData2
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

@@ -9,7 +9,7 @@
       >
         <i
           :class="[
-            item.path === currentPath ? 'el-icon-star-on' : 'el-icon-star-off',
+            item.path === currentPath ? 'el-icon-star-on' : 'el-icon-star-off'
           ]"
           :style="{ color: randomBk() }"
         ></i>
@@ -20,58 +20,58 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, ref, toRefs, watch } from "vue";
-import { useStore } from "vuex";
-import { useRouter } from "vue-router";
-import randomBk from "@/assets/js/randomBk";
-import { IRouteDetail } from "@/store/modules/navInfo";
+import { defineComponent, reactive, ref, toRefs, watch } from 'vue'
+import { useStore } from 'vuex'
+import { useRouter } from 'vue-router'
+import randomBk from '@/assets/js/randomBk'
+import { IRouteDetail } from '@/store/modules/navInfo'
 
 export default defineComponent({
-  name: "left",
+  name: 'left',
   setup() {
-    const store = useStore();
-    const { navDetailInfo } = store.state.navInfo;
+    const store = useStore()
+    const { navDetailInfo } = store.state.navInfo
     const state = reactive<{ currentNavInfo: IRouteDetail[] }>({
-      currentNavInfo: [],
-    });
-    const currentPath = ref<string>("");
-    const router = useRouter();
+      currentNavInfo: []
+    })
+    const currentPath = ref<string>('')
+    const router = useRouter()
 
     // -- 跳转路由
     const skipRouter = (path: string) => {
-      currentPath.value = path;
+      currentPath.value = path
 
       // -- 转换路由
-      router.push({ path: `/${path}` });
-    };
+      router.push({ path: `/${path}` })
+    }
 
     // -- 监听当前的导航信息
     watch(
       () => store.state.navInfo.currentNav,
       (nav: string) => {
-        const currentNavInfo = navDetailInfo[nav] as IRouteDetail[];
+        const currentNavInfo = navDetailInfo[nav] as IRouteDetail[]
         if (!currentNavInfo || currentNavInfo.length === 0) {
-          state.currentNavInfo = [];
-          return;
+          state.currentNavInfo = []
+          return
         }
-        state.currentNavInfo = currentNavInfo;
+        state.currentNavInfo = currentNavInfo
 
         // -- 默认选中第一个
         if (currentNavInfo.length > 0) {
-          skipRouter(currentNavInfo[0].path);
+          skipRouter(currentNavInfo[0].path)
         }
       },
       { immediate: true }
-    );
+    )
 
     return {
       ...toRefs(state),
       currentPath,
       randomBk,
-      skipRouter,
-    };
-  },
-});
+      skipRouter
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

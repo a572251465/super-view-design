@@ -11,36 +11,36 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, getCurrentInstance, onMounted } from "vue";
-import Top from "@/components/Top/index.vue";
-import Left from "@/components/Left/index.vue";
-import Right from "@/components/Right/index.vue";
+import { defineComponent, getCurrentInstance, onMounted } from 'vue'
+import Top from '@/components/Top/index.vue'
+import Left from '@/components/Left/index.vue'
+import Right from '@/components/Right/index.vue'
 
 export default defineComponent({
-  name: "home",
+  name: 'home',
   components: {
     Top,
     Left,
-    Right,
+    Right
   },
   setup() {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    const { proxy } = getCurrentInstance()!;
+    const { proxy } = getCurrentInstance()!
 
     // -- 组件加载完成
     onMounted(() => {
       // eslint-disable-next-line no-unused-expressions
       proxy?.$notify({
-        type: "success",
-        title: "友情提示",
-        position: "bottom-right",
+        type: 'success',
+        title: '友情提示',
+        position: 'bottom-right',
         message:
-          "首先点击每个单元模块，如果没有对应的文章可以到【知识文章】中寻找",
-        showClose: true,
-      });
-    });
-  },
-});
+          '首先点击每个单元模块，如果没有对应的文章可以到【知识文章】中寻找',
+        showClose: true
+      })
+    })
+  }
+})
 </script>
 
 <style lang="scss" scoped>

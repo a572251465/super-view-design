@@ -15,34 +15,34 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
-import { useStore } from "vuex";
-import logo from "@/assets/images/logo.png";
-import SETTING_CURRENT_NAV from "@/store/modules/navInfo/method-types";
+import { defineComponent, ref } from 'vue'
+import { useStore } from 'vuex'
+import logo from '@/assets/images/logo.png'
+import SETTING_CURRENT_NAV from '@/store/modules/navInfo/method-types'
 
 export default defineComponent({
-  name: "top",
+  name: 'top',
   setup() {
-    const store = useStore();
-    const { navList } = store.state.navInfo;
-    const currentNav = ref<string>(store.state.navInfo.currentNav);
+    const store = useStore()
+    const { navList } = store.state.navInfo
+    const currentNav = ref<string>(store.state.navInfo.currentNav)
 
     // -- 点击导航事件
     const clickNavHandle = (nav: string) => {
-      currentNav.value = nav;
+      currentNav.value = nav
 
       // -- 修改vuex状态
-      store.dispatch(`navInfo/${SETTING_CURRENT_NAV}`, nav);
-    };
+      store.dispatch(`navInfo/${SETTING_CURRENT_NAV}`, nav)
+    }
 
     return {
       logo,
       navList,
       currentNav,
-      clickNavHandle,
-    };
-  },
-});
+      clickNavHandle
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>
@@ -56,20 +56,20 @@ export default defineComponent({
   justify-content: space-between;
 
   &-logo {
-    width: 50px;
-    height: 50px;
-    margin-left: 50px;
+    width: 60px;
+    height: 60px;
+    margin-left: 100px;
   }
 
   &-list {
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
     font-weight: bold;
     margin-right: 150px;
     font-style: oblique;
     li {
       display: inline-block;
-      width: 100px;
+      width: 150px;
       text-align: center;
       cursor: pointer;
 

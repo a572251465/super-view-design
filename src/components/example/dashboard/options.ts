@@ -1,4 +1,4 @@
-import { EChartsOption } from "echarts";
+import { EChartsOption } from 'echarts'
 
 /**
  * @author lihh
@@ -10,10 +10,10 @@ const getOptions = (colors: [number, string][]): EChartsOption => {
       // 外圈渐变
       {
         // -- 类型
-        type: "gauge",
+        type: 'gauge',
         // -- 起始角度
         startAngle: 180,
-        radius: "100%",
+        radius: '100%',
         // -- 结束角度
         endAngle: 0,
         // -- 表示线的相关操作
@@ -24,8 +24,8 @@ const getOptions = (colors: [number, string][]): EChartsOption => {
           lineStyle: {
             width: -7,
             opacity: 0,
-            color: colors,
-          },
+            color: colors
+          }
         },
         title: { show: false },
         detail: { show: false },
@@ -37,28 +37,28 @@ const getOptions = (colors: [number, string][]): EChartsOption => {
           distance: 15,
           lineStyle: {
             // -- 刻度颜色 跟线的样式保持一致
-            color: "auto",
+            color: 'auto',
             // -- 刻度宽度
-            width: 2,
-          },
+            width: 2
+          }
         },
         axisLabel: { show: false },
         pointer: { show: false },
         itemStyle: {
-          color: "red",
+          color: 'red'
         },
         data: [
           {
             value: 180,
-            name: "test gauge",
-          },
-        ],
+            name: 'test gauge'
+          }
+        ]
       },
       // -- 内圈分割线部分
       {
-        type: "gauge",
-        radius: "83%",
-        center: ["50%", "50%"],
+        type: 'gauge',
+        radius: '83%',
+        center: ['50%', '50%'],
         endAngle: 0,
         startAngle: 180,
         splitNumber: 0,
@@ -66,17 +66,17 @@ const getOptions = (colors: [number, string][]): EChartsOption => {
           show: true,
           lineStyle: {
             width: 1,
-            color: [[1, "#112033"]],
-          },
+            color: [[1, '#112033']]
+          }
         },
         splitLine: { show: false },
         axisLabel: { show: false },
         axisTick: { show: false },
-        pointer: { show: false },
-      },
-    ],
-  };
-  return options;
-};
+        pointer: { show: false }
+      }
+    ]
+  }
+  return options
+}
 
-export default getOptions;
+export default getOptions

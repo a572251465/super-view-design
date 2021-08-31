@@ -15,9 +15,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import ListTemplate from "@/components/ListTemplate/index.vue";
-import ListDetail from "@/components/ListDetail/index.vue";
+import { defineComponent } from 'vue'
+import ListTemplate from '@/components/ListTemplate/index.vue'
+import ListDetail from '@/components/ListDetail/index.vue'
 import {
   linuxContent,
   linuxContent1,
@@ -25,14 +25,14 @@ import {
   linuxContent3,
   linuxContent4,
   linuxContent5,
-  linuxContent6,
-} from "./data";
+  linuxContent6
+} from './data'
 
 export default defineComponent({
-  name: "commonCommandLinux",
+  name: 'commonCommandLinux',
   components: {
     ListTemplate,
-    ListDetail,
+    ListDetail
   },
   setup() {
     return {
@@ -42,10 +42,10 @@ export default defineComponent({
       linuxContent3,
       linuxContent4,
       linuxContent5,
-      linuxContent6,
-    };
-  },
-});
+      linuxContent6
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

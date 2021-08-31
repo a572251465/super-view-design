@@ -1,100 +1,100 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
-import Home from "@/views/Home/index.vue";
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
+import Home from '@/views/Home/index.vue'
 
-const Dashboard = () => import("@/views/Dashboard/index.vue");
-const SimpleBar = () => import("@/views/SimpleBar/index.vue");
-const SimpleLine = () => import("@/views/SimpleLine/index.vue");
-const ScalePie = () => import("@/views/ScalePie/index.vue");
-const NotFound = () => import("@/views/NotFound/index.vue");
-const CommonCommandGit = () => import("@/views/CommonCommandGit/index.vue");
-const CommonCommandLinux = () => import("@/views/CommonCommandLinux/index.vue");
-const CommonlyAddress = () => import("@/views/CommonlyAddress/index.vue");
-const CssWorld = () => import("@/views/CssWorld/index.vue");
-const VueWorld = () => import("@/views/VueWorld/index.vue");
+const Dashboard = () => import('@/views/Dashboard/index.vue')
+const SimpleBar = () => import('@/views/SimpleBar/index.vue')
+const SimpleLine = () => import('@/views/SimpleLine/index.vue')
+const ScalePie = () => import('@/views/ScalePie/index.vue')
+const NotFound = () => import('@/views/NotFound/index.vue')
+const CommonCommandGit = () => import('@/views/CommonCommandGit/index.vue')
+const CommonCommandLinux = () => import('@/views/CommonCommandLinux/index.vue')
+const CommonlyAddress = () => import('@/views/CommonlyAddress/index.vue')
+const CssWorld = () => import('@/views/CssWorld/index.vue')
+const VueWorld = () => import('@/views/VueWorld/index.vue')
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: "/",
-    name: "home",
+    path: '/',
+    name: 'home',
     component: Home,
     children: [
       {
-        path: "/half-hashboard",
-        name: "half-hashboard",
+        path: '/half-hashboard',
+        name: 'half-hashboard',
         components: {
-          main: Dashboard,
-        },
+          main: Dashboard
+        }
       },
       {
-        path: "/simple-bar",
-        name: "simple-bar",
+        path: '/simple-bar',
+        name: 'simple-bar',
         components: {
-          main: SimpleBar,
-        },
+          main: SimpleBar
+        }
       },
       {
-        path: "/simple-line",
-        name: "simple-line",
+        path: '/simple-line',
+        name: 'simple-line',
         components: {
-          main: SimpleLine,
-        },
+          main: SimpleLine
+        }
       },
       {
-        path: "/commonCommandGit",
-        name: "commonCommandGit",
+        path: '/commonCommandGit',
+        name: 'commonCommandGit',
         components: {
-          main: CommonCommandGit,
-        },
+          main: CommonCommandGit
+        }
       },
       {
-        path: "/commonCommandLinux",
-        name: "commonCommandLinux",
+        path: '/commonCommandLinux',
+        name: 'commonCommandLinux',
         components: {
-          main: CommonCommandLinux,
-        },
+          main: CommonCommandLinux
+        }
       },
       {
-        path: "/commonly-address",
-        name: "commonly-address",
+        path: '/commonly-address',
+        name: 'commonly-address',
         components: {
-          main: CommonlyAddress,
-        },
+          main: CommonlyAddress
+        }
       },
       {
-        path: "/scale-pie",
-        name: "scale-pie",
+        path: '/scale-pie',
+        name: 'scale-pie',
         components: {
-          main: ScalePie,
-        },
+          main: ScalePie
+        }
       },
       {
-        path: "/css-world",
-        name: "css-world",
+        path: '/css-world',
+        name: 'css-world',
         components: {
-          main: CssWorld,
-        },
+          main: CssWorld
+        }
       },
       {
-        path: "/vue-world",
-        name: "vue-world",
+        path: '/vue-world',
+        name: 'vue-world',
         components: {
-          main: VueWorld,
-        },
+          main: VueWorld
+        }
       },
       {
-        path: "/:pathMatch(.*)*",
-        name: "not-found",
+        path: '/:pathMatch(.*)*',
+        name: 'not-found',
         components: {
-          main: NotFound,
-        },
-      },
-    ],
-  },
-];
+          main: NotFound
+        }
+      }
+    ]
+  }
+]
 
 const router = createRouter({
   history: createWebHashHistory(),
-  routes,
-});
+  routes
+})
 
-export default router;
+export default router

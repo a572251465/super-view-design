@@ -5,13 +5,13 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import DashboardInstance from "@/components/example/dashboard/index.vue";
+import { defineComponent } from 'vue'
+import DashboardInstance from '@/components/example/dashboard/index.vue'
 
 export default defineComponent({
-  name: "dashboard",
+  name: 'dashboard',
   components: {
-    DashboardInstance,
-  },
-});
+    DashboardInstance
+  }
+})
 </script>

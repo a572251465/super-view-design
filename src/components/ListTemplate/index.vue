@@ -5,11 +5,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: "list-template",
-});
+  name: 'list-template'
+})
 </script>
 
 <style lang="scss" scoped>

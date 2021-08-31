@@ -6,17 +6,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import workImg from "@/assets/images/working.png";
+import { defineComponent } from 'vue'
+import workImg from '@/assets/images/working.png'
 
 export default defineComponent({
-  name: "not-found",
+  name: 'not-found',
   setup() {
     return {
-      workImg,
-    };
-  },
-});
+      workImg
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

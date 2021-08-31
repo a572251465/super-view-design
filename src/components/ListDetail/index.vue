@@ -21,47 +21,47 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, getCurrentInstance, PropType } from "vue";
-import { IListTemplate } from "./types";
-import randomBk from "@/assets/js/randomBk";
-import copyTxt from "@/assets/js/copyTxt";
+import { defineComponent, getCurrentInstance, PropType } from 'vue'
+import { IListTemplate } from './types'
+import randomBk from '@/assets/js/randomBk'
+import copyTxt from '@/assets/js/copyTxt'
 
 export default defineComponent({
-  name: "list-detail",
+  name: 'list-detail',
   props: {
     content: {
       type: Object as PropType<IListTemplate>,
-      default: () => ({}),
-    },
+      default: () => ({})
+    }
   },
   setup() {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    const { proxy } = getCurrentInstance()!;
+    const { proxy } = getCurrentInstance()!
 
     // -- 复制内容事件
     const copyHandle = (detail: string) => {
-      let detailInner: string = detail;
-      if (detailInner.startsWith("$")) {
-        detailInner = detailInner.replace(/^\$\s+/gi, "");
+      let detailInner: string = detail
+      if (detailInner.startsWith('$')) {
+        detailInner = detailInner.replace(/^\$\s+/gi, '')
       }
       const inputDom: HTMLInputElement = proxy?.$refs
-        .copyInput as HTMLInputElement;
+        .copyInput as HTMLInputElement
       /* eslint-disable */
       copyTxt(inputDom, detailInner)
         .then(() => {
-          proxy?.$message.success("复制成功");
+          proxy?.$message.success('复制成功')
         })
         .catch(() => {
-          proxy?.$message.success("复制失败,为了更好的体验请更换Chrome浏览器");
-        });
-    };
+          proxy?.$message.success('复制失败,为了更好的体验请更换Chrome浏览器')
+        })
+    }
 
     return {
       randomBk,
-      copyHandle,
-    };
-  },
-});
+      copyHandle
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

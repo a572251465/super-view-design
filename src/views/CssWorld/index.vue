@@ -5,30 +5,42 @@
         <h3>Css总结文章地址</h3>
         <address-detail :addressInfo="addressData"></address-detail>
         <address-detail :addressInfo="addressData1"></address-detail>
+        <address-detail :addressInfo="addressData2"></address-detail>
+        <address-detail :addressInfo="addressData3"></address-detail>
+        <address-detail :addressInfo="addressData4"></address-detail>
       </list-template>
     </el-scrollbar>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import ListTemplate from "@/components/ListTemplate/index.vue";
-import AddressDetail from "@/components/AddressDetail/index.vue";
-import { addressData, addressData1 } from "@/views/CssWorld/data";
+import { defineComponent } from 'vue'
+import ListTemplate from '@/components/ListTemplate/index.vue'
+import AddressDetail from '@/components/AddressDetail/index.vue'
+import {
+  addressData,
+  addressData1,
+  addressData2,
+  addressData3,
+  addressData4
+} from '@/views/CssWorld/data'
 
 export default defineComponent({
-  name: "commonCommandGit",
+  name: 'commonCommandGit',
   components: {
     ListTemplate,
-    AddressDetail,
+    AddressDetail
   },
   setup() {
     return {
       addressData,
       addressData1,
-    };
-  },
-});
+      addressData2,
+      addressData3,
+      addressData4
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

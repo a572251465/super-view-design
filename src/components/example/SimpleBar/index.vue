@@ -5,25 +5,25 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, getCurrentInstance, onMounted } from "vue";
-import getSimpleBarOptions from "./options";
+import { defineComponent, getCurrentInstance, onMounted } from 'vue'
+import getSimpleBarOptions from './options'
 
 export default defineComponent({
-  name: "simplebar-example",
+  name: 'simplebar-example',
   setup() {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    const { proxy } = getCurrentInstance()!;
+    const { proxy } = getCurrentInstance()!
 
     // -- 组件加载钩子函数
     onMounted(() => {
-      const dom = document.querySelector("#container") as HTMLElement;
-      const myChart = proxy?.$echarts.init(dom);
+      const dom = document.querySelector('#container') as HTMLElement
+      const myChart = proxy?.$echarts.init(dom)
       if (myChart) {
-        myChart.setOption(getSimpleBarOptions());
+        myChart.setOption(getSimpleBarOptions())
       }
-    });
-  },
-});
+    })
+  }
+})
 </script>
 
 <style lang="scss" scoped>

@@ -1,11 +1,11 @@
 interface IDetail {
-  address: string;
-  notes?: string;
-  isImportant?: boolean;
+  address: string
+  notes?: string
+  isImportant?: boolean
 }
 
 export interface IAddressDetail {
-  title: string;
-  grade: number;
-  children: IDetail[];
+  title: string
+  grade: number
+  children: IDetail[]
 }

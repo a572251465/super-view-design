@@ -1,51 +1,51 @@
-import { ActionTree, GetterTree, MutationTree } from "vuex";
-import { IRootState } from "@/store";
-import SETTING_CURRENT_NAV from "./method-types";
+import { ActionTree, GetterTree, MutationTree } from 'vuex'
+import { IRootState } from '@/store'
+import SETTING_CURRENT_NAV from './method-types'
 
 export interface IRouteDetail {
-  label: string;
-  path: string;
+  label: string
+  path: string
 }
 export interface INavInfo {
-  navList: { label: string; value: string }[];
-  navDetailInfo: { [value: string]: IRouteDetail[] };
-  currentNav: string;
+  navList: { label: string; value: string }[]
+  navDetailInfo: { [value: string]: IRouteDetail[] }
+  currentNav: string
 }
 
 // -- 表示状态
 const navInfoState: INavInfo = {
   navList: [
-    { label: "可视化", value: "1" },
-    { label: "Css", value: "2" },
-    { label: "JavaScript", value: "3" },
-    { label: "Html", value: "4" },
-    { label: "Vue", value: "5" },
-    { label: "Git", value: "6" },
-    { label: "linux", value: "7" },
-    { label: "知识文章", value: "8" },
+    { label: '可视化', value: '1' },
+    { label: 'Css', value: '2' },
+    { label: 'JavaScript', value: '3' },
+    { label: 'Html', value: '4' },
+    { label: 'Vue', value: '5' },
+    { label: 'Git', value: '6' },
+    { label: 'linux', value: '7' },
+    { label: '知识文章', value: '8' }
   ],
   navDetailInfo: {
-    "1": [
-      { label: "半仪表盘", path: "half-hashboard" },
-      { label: "简单柱状图", path: "simple-bar" },
-      { label: "简单折线图", path: "simple-line" },
-      { label: "刻度饼状图", path: "scale-pie" },
+    '1': [
+      { label: '半仪表盘', path: 'half-hashboard' },
+      { label: '简单柱状图', path: 'simple-bar' },
+      { label: '简单折线图', path: 'simple-line' },
+      { label: '刻度饼状图', path: 'scale-pie' }
     ],
-    "2": [{ label: "css的世界", path: "css-world" }],
-    "3": [{ label: "JavaScript之子", path: "javascript-world" }],
-    "5": [{ label: "走进vue", path: "vue-world" }],
-    "6": [{ label: "常用命令", path: "commonCommandGit" }],
-    "7": [{ label: "常用命令", path: "commonCommandLinux" }],
-    "8": [{ label: "常用地址", path: "commonly-address" }],
+    '2': [{ label: 'css的世界', path: 'css-world' }],
+    '3': [{ label: 'JavaScript之子', path: 'javascript-world' }],
+    '5': [{ label: '走进vue', path: 'vue-world' }],
+    '6': [{ label: '常用命令', path: 'commonCommandGit' }],
+    '7': [{ label: '常用命令', path: 'commonCommandLinux' }],
+    '8': [{ label: '常用地址', path: 'commonly-address' }]
   },
-  currentNav: "1",
-};
+  currentNav: '1'
+}
 
 // -- getters
 const getters: GetterTree<INavInfo, IRootState> = {
   navList: (state) => state.navList,
-  navDetailInfo: (state) => state.navDetailInfo,
-};
+  navDetailInfo: (state) => state.navDetailInfo
+}
 
 // -- mutations
 const mutations: MutationTree<INavInfo> = {
@@ -57,9 +57,9 @@ const mutations: MutationTree<INavInfo> = {
    */
   [SETTING_CURRENT_NAV](state, nav) {
     // eslint-disable-next-line no-param-reassign
-    state.currentNav = nav;
-  },
-};
+    state.currentNav = nav
+  }
+}
 
 // -- actions
 const actions: ActionTree<INavInfo, IRootState> = {
@@ -70,14 +70,14 @@ const actions: ActionTree<INavInfo, IRootState> = {
    * @param nav 表示导航信息
    */
   [SETTING_CURRENT_NAV]({ commit }, nav: string) {
-    commit(SETTING_CURRENT_NAV, nav);
-  },
-};
+    commit(SETTING_CURRENT_NAV, nav)
+  }
+}
 
 const navInfo = {
   state: navInfoState,
   getters,
   mutations,
-  actions,
-};
-export default navInfo;
+  actions
+}
+export default navInfo

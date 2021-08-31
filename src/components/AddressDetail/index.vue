@@ -35,37 +35,37 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, getCurrentInstance, PropType } from "vue";
-import { ElMessage } from "element-plus";
-import { IAddressDetail } from "@/components/AddressDetail/types";
-import randomBk from "@/assets/js/randomBk";
-import copyTxt from "@/assets/js/copyTxt";
+import { defineComponent, getCurrentInstance, PropType } from 'vue'
+import { ElMessage } from 'element-plus'
+import { IAddressDetail } from '@/components/AddressDetail/types'
+import randomBk from '@/assets/js/randomBk'
+import copyTxt from '@/assets/js/copyTxt'
 
 export default defineComponent({
-  name: "address-detail",
+  name: 'address-detail',
   props: {
     addressInfo: {
       type: Object as PropType<IAddressDetail>,
-      required: true,
-    },
+      required: true
+    }
   },
   setup() {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-    const { proxy } = getCurrentInstance()!;
+    const { proxy } = getCurrentInstance()!
     // -- 复制文本处理
     const copyText = (text: string): void => {
       // 获取dom元素
-      const el = proxy?.$refs["copy-text"] as HTMLInputElement;
-      copyTxt(el, text);
-      ElMessage.success("复制成功");
-    };
+      const el = proxy?.$refs['copy-text'] as HTMLInputElement
+      copyTxt(el, text)
+      ElMessage.success('复制成功')
+    }
 
     return {
       randomBk,
-      copyText,
-    };
-  },
-});
+      copyText
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>

@@ -1,4 +1,4 @@
-import { EChartsOption } from "echarts";
+import { EChartsOption } from 'echarts'
 
 /**
  * @author lihh
@@ -6,56 +6,56 @@ import { EChartsOption } from "echarts";
  * @returns 参数配置
  */
 const getSimpleLineOptions = (): EChartsOption => {
-  const monthInfo = Array.from({ length: 12 }).map((_, key) => key + 1);
+  const monthInfo = Array.from({ length: 12 }).map((_, key) => key + 1)
   const options: EChartsOption = {
     xAxis: {
-      type: "category",
+      type: 'category',
       data: monthInfo,
       // -- 坐标名称
-      name: "月",
+      name: '月',
       // -- 位置
-      nameLocation: "end",
+      nameLocation: 'end',
       axisLine: {
         show: true,
         lineStyle: {
-          color: "#598fbd",
-        },
+          color: '#598fbd'
+        }
       },
       axisTick: {
-        show: false,
-      },
+        show: false
+      }
     },
     yAxis: {
-      type: "value",
+      type: 'value',
       // -- 坐标名称
-      name: "金额 (万元)",
-      nameLocation: "end",
+      name: '金额 (万元)',
+      nameLocation: 'end',
       axisLine: {
         show: true,
         lineStyle: {
-          color: "#598fbd",
-        },
+          color: '#598fbd'
+        }
       },
       // -- 分割线
       splitLine: {
         show: true,
         lineStyle: {
-          color: "#0f1c32",
-        },
-      },
+          color: '#0f1c32'
+        }
+      }
     },
     series: [
       {
         data: [200, 270, 380, 200, 260, 130, 300],
-        type: "line",
+        type: 'line',
         itemStyle: {
-          color: "#0090ed",
-        },
-      },
-    ],
-  };
+          color: '#0090ed'
+        }
+      }
+    ]
+  }
 
-  return options;
-};
+  return options
+}
 
-export default getSimpleLineOptions;
+export default getSimpleLineOptions

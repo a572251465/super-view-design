@@ -10,23 +10,23 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
-import ListTemplate from "@/components/ListTemplate/index.vue";
-import AddressDetail from "@/components/AddressDetail/index.vue";
-import addressData from "@/views/VueWorld/data";
+import { defineComponent } from 'vue'
+import ListTemplate from '@/components/ListTemplate/index.vue'
+import AddressDetail from '@/components/AddressDetail/index.vue'
+import addressData from '@/views/VueWorld/data'
 
 export default defineComponent({
-  name: "commonCommandGit",
+  name: 'commonCommandGit',
   components: {
     ListTemplate,
-    AddressDetail,
+    AddressDetail
   },
   setup() {
     return {
-      addressData,
-    };
-  },
-});
+      addressData
+    }
+  }
+})
 </script>
 
 <style lang="scss" scoped>
