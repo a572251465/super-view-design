@@ -60,4 +60,36 @@ const addressData4: IAddressDetail = {
   ]
 }
 
-export { addressData, addressData1, addressData2, addressData3, addressData4 }
+const addressData5: IAddressDetail = {
+  title: 'BFC的“七十二变”',
+  grade: 3,
+  children: [
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/qpfi72/yx8o7m',
+      notes: '个人文章',
+      isImportant: true
+    }
+  ]
+}
+
+const addressData6: IAddressDetail = {
+  title: '浮动的天生“对手',
+  grade: 3,
+  children: [
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/qpfi72/vo79ib',
+      notes: '个人文章',
+      isImportant: true
+    }
+  ]
+}
+
+export {
+  addressData,
+  addressData1,
+  addressData2,
+  addressData3,
+  addressData4,
+  addressData5,
+  addressData6
+}

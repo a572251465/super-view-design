@@ -8,6 +8,8 @@
         <address-detail :addressInfo="addressData2"></address-detail>
         <address-detail :addressInfo="addressData3"></address-detail>
         <address-detail :addressInfo="addressData4"></address-detail>
+        <address-detail :addressInfo="addressData5"></address-detail>
+        <address-detail :addressInfo="addressData6"></address-detail>
       </list-template>
     </el-scrollbar>
   </div>
@@ -22,7 +24,9 @@ import {
   addressData1,
   addressData2,
   addressData3,
-  addressData4
+  addressData4,
+  addressData5,
+  addressData6
 } from '@/views/CssWorld/data'
 
 export default defineComponent({
@@ -37,7 +41,9 @@ export default defineComponent({
       addressData1,
       addressData2,
       addressData3,
-      addressData4
+      addressData4,
+      addressData5,
+      addressData6
     }
   }
 })

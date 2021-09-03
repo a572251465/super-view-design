@@ -62,14 +62,14 @@ export default defineComponent({
   }
 
   &-list {
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
     font-weight: bold;
-    margin-right: 150px;
+    display: flex;
     font-style: oblique;
     li {
       display: inline-block;
-      width: 150px;
+      width: 110px;
       text-align: center;
       cursor: pointer;
 
