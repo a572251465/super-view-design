@@ -84,6 +84,28 @@ const addressData6: IAddressDetail = {
   ]
 }
 
+const addressData7: IAddressDetail = {
+  title: '各种布局方式',
+  grade: 3,
+  children: [
+    {
+      address: 'https://www.yuque.com/tangxuefeng/ptkd32/fylc2c',
+      notes: '水平垂直对齐实现方案',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/tangxuefeng/ptkd32/qaqfas',
+      notes: '两列布局实现方案',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/tangxuefeng/ptkd32/oy5zky',
+      notes: '三列布局实现方案',
+      isImportant: true
+    }
+  ]
+}
+
 export {
   addressData,
   addressData1,
@@ -91,5 +113,6 @@ export {
   addressData3,
   addressData4,
   addressData5,
-  addressData6
+  addressData6,
+  addressData7
 }
