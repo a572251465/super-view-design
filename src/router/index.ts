@@ -11,6 +11,7 @@ const CommonCommandLinux = () => import('@/views/CommonCommandLinux/index.vue')
 const CommonlyAddress = () => import('@/views/CommonlyAddress/index.vue')
 const CssWorld = () => import('@/views/CssWorld/index.vue')
 const VueWorld = () => import('@/views/VueWorld/index.vue')
+const JavascriptWorld = () => import('@/views/JavascriptWorld/index.vue')
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -72,6 +73,13 @@ const routes: Array<RouteRecordRaw> = [
         name: 'css-world',
         components: {
           main: CssWorld
+        }
+      },
+      {
+        path: '/javascript-world',
+        name: 'javascript-world',
+        components: {
+          main: JavascriptWorld
         }
       },
       {
