@@ -10,12 +10,7 @@ module.exports = {
       }
     }
   },
-  extends: [
-    'airbnb-base',
-    'plugin:vue/vue3-essential',
-    '@vue/typescript/recommended',
-    'prettier'
-  ],
+  extends: ['airbnb-base', 'plugin:vue/vue3-essential', '@vue/typescript/recommended', 'prettier'],
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: '@typescript-eslint/parser',

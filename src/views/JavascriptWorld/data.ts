@@ -12,4 +12,19 @@ const addressData: IAddressDetail = {
   ]
 }
 
-export default addressData
+const addressData1: IAddressDetail = {
+  title: 'websocket重要文章',
+  grade: 5,
+  children: [
+    {
+      address: 'https://juejin.cn/post/6844903544978407431',
+      isImportant: true
+    },
+    {
+      address: 'https://www.ruanyifeng.com/blog/2017/05/websocket.html',
+      isImportant: true
+    }
+  ]
+}
+
+export { addressData, addressData1 }

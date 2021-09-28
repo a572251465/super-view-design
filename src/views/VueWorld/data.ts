@@ -10,4 +10,14 @@ const addressData: IAddressDetail = {
   ]
 }
 
-export default addressData
+const addressData1: IAddressDetail = {
+  title: 'vue-cli4的全面配置',
+  grade: 5,
+  children: [
+    {
+      address: 'https://zhuanlan.zhihu.com/p/109952157'
+    }
+  ]
+}
+
+export { addressData1, addressData }

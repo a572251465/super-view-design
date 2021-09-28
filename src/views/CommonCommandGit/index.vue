@@ -16,13 +16,7 @@
 import { defineComponent, getCurrentInstance, onMounted } from 'vue'
 import ListTemplate from '@/components/ListTemplate/index.vue'
 import ListDetail from '@/components/ListDetail/index.vue'
-import {
-  gitContent,
-  gitContent1,
-  gitContent2,
-  gitContent3,
-  gitContent4
-} from '@/views/CommonCommandGit/data'
+import { gitContent, gitContent1, gitContent2, gitContent3, gitContent4 } from '@/views/CommonCommandGit/data'
 
 export default defineComponent({
   name: 'commonCommandGit',

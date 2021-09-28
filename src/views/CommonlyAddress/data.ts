@@ -26,8 +26,7 @@ const addressData2: IAddressDetail = {
   grade: 4,
   children: [
     {
-      address:
-        'https://www.meteorlxy.cn/posts/2019/08/05/understand-and-use-prettier.html'
+      address: 'https://www.meteorlxy.cn/posts/2019/08/05/understand-and-use-prettier.html'
     },
     {
       address: 'https://juejin.cn/post/6915378605459521543'
@@ -40,4 +39,14 @@ const addressData2: IAddressDetail = {
   ]
 }
 
-export { addressData, addressData1, addressData2 }
+const addressData3: IAddressDetail = {
+  title: '更加优雅的git message',
+  grade: 4,
+  children: [
+    {
+      address: 'https://juejin.cn/post/6844903606815064077'
+    }
+  ]
+}
+
+export { addressData, addressData1, addressData2, addressData3 }

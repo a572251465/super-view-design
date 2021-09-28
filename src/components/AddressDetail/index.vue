@@ -7,12 +7,7 @@
         </span>
         <span class="title-left-flags"
           >重要程度:
-          <i
-            class="el-icon-star-on"
-            v-for="item in addressInfo.grade"
-            :key="item"
-            :style="{ color: randomBk() }"
-          ></i>
+          <i class="el-icon-star-on" v-for="item in addressInfo.grade" :key="item" :style="{ color: randomBk() }"></i>
         </span>
       </div>
       <div class="title-right">展开</div>
@@ -21,12 +16,7 @@
       <li v-for="item in addressInfo.children" :key="item.address">
         <i class="el-icon-star-on" :style="{ color: randomBk() }"></i>
         <a :href="item.address" target="_blank">{{ item.address }}</a>
-        <span
-          class="content"
-          :class="[item.isImportant ? 'active' : '']"
-          v-show="item.notes"
-          >{{ item.notes }}</span
-        >
+        <span class="content" :class="[item.isImportant ? 'active' : '']" v-show="item.notes">{{ item.notes }}</span>
         <button @click="copyText(item.address)">复制链接</button>
       </li>
     </ul>

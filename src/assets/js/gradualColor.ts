@@ -32,11 +32,7 @@ const rgb2color = (rgb: number[]): string => {
  * @param color2 渐变结束颜色
  * @param len 表示渐变颜色个数
  */
-const generatorColor = (
-  color1: string,
-  color2: string,
-  len: number
-): string[] => {
+const generatorColor = (color1: string, color2: string, len: number): string[] => {
   const Gradient = new Array(3)
   const result: string[] = []
   const A = color2rgb(color1)

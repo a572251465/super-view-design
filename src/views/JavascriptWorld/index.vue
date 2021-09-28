@@ -4,6 +4,7 @@
       <list-template class="list-template">
         <h3>Javascript总结文章地址</h3>
         <address-detail :addressInfo="addressData"></address-detail>
+        <address-detail :addressInfo="addressData1"></address-detail>
       </list-template>
     </el-scrollbar>
   </div>
@@ -13,7 +14,7 @@
 import { defineComponent } from 'vue'
 import ListTemplate from '@/components/ListTemplate/index.vue'
 import AddressDetail from '@/components/AddressDetail/index.vue'
-import addressData from '@/views/JavascriptWorld/data'
+import { addressData, addressData1 } from '@/views/JavascriptWorld/data'
 
 export default defineComponent({
   name: 'commonCommandGit',
@@ -23,7 +24,8 @@ export default defineComponent({
   },
   setup() {
     return {
-      addressData
+      addressData,
+      addressData1
     }
   }
 })

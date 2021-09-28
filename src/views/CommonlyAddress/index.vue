@@ -6,6 +6,7 @@
         <address-detail :addressInfo="addressData"></address-detail>
         <address-detail :addressInfo="addressData1"></address-detail>
         <address-detail :addressInfo="addressData2"></address-detail>
+        <address-detail :addressInfo="addressData3"></address-detail>
       </list-template>
     </el-scrollbar>
   </div>
@@ -15,11 +16,7 @@
 import { defineComponent } from 'vue'
 import ListTemplate from '@/components/ListTemplate/index.vue'
 import AddressDetail from '@/components/AddressDetail/index.vue'
-import {
-  addressData,
-  addressData1,
-  addressData2
-} from '@/views/CommonlyAddress/data'
+import { addressData, addressData1, addressData2, addressData3 } from '@/views/CommonlyAddress/data'
 
 export default defineComponent({
   name: 'commonCommandGit',
@@ -31,7 +28,8 @@ export default defineComponent({
     return {
       addressData,
       addressData1,
-      addressData2
+      addressData2,
+      addressData3
     }
   }
 })

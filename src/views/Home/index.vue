@@ -34,8 +34,7 @@ export default defineComponent({
         type: 'success',
         title: '友情提示',
         position: 'bottom-right',
-        message:
-          '首先点击每个单元模块，如果没有对应的文章可以到【知识文章】中寻找',
+        message: '首先点击每个单元模块，如果没有对应的文章可以到【知识文章】中寻找',
         showClose: true
       })
     })

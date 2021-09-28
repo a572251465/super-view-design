@@ -89,12 +89,4 @@ const linuxContent6: IListTemplate = {
   ]
 }
 
-export {
-  linuxContent,
-  linuxContent1,
-  linuxContent2,
-  linuxContent3,
-  linuxContent4,
-  linuxContent5,
-  linuxContent6
-}
+export { linuxContent, linuxContent1, linuxContent2, linuxContent3, linuxContent4, linuxContent5, linuxContent6 }

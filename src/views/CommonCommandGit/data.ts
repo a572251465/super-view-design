@@ -10,10 +10,7 @@ const gitContent: IListTemplate = {
 
 const gitContent1: IListTemplate = {
   title: '查看配置',
-  content: [
-    { detail: '$  git config --global user.name' },
-    { detail: '$  git config --global user.email' }
-  ]
+  content: [{ detail: '$  git config --global user.name' }, { detail: '$  git config --global user.email' }]
 }
 
 const gitContent2: IListTemplate = {

@@ -1,16 +1,9 @@
 <template>
   <div class="left">
     <ul>
-      <li
-        v-for="item in currentNavInfo"
-        :key="item.path"
-        @click="skipRouter(item.path)"
-        class="left-detail"
-      >
+      <li v-for="item in currentNavInfo" :key="item.path" @click="skipRouter(item.path)" class="left-detail">
         <i
-          :class="[
-            item.path === currentPath ? 'el-icon-star-on' : 'el-icon-star-off'
-          ]"
+          :class="[item.path === currentPath ? 'el-icon-star-on' : 'el-icon-star-off']"
           :style="{ color: randomBk() }"
         ></i>
         <span>{{ item.label }}</span>

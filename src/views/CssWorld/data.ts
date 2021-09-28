@@ -106,13 +106,4 @@ const addressData7: IAddressDetail = {
   ]
 }
 
-export {
-  addressData,
-  addressData1,
-  addressData2,
-  addressData3,
-  addressData4,
-  addressData5,
-  addressData6,
-  addressData7
-}
+export { addressData, addressData1, addressData2, addressData3, addressData4, addressData5, addressData6, addressData7 }

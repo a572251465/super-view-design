@@ -1,23 +1,9 @@
 import { App } from 'vue'
 import * as echarts from 'echarts'
-import {
-  ElCollapse,
-  ElCollapseItem,
-  ElIcon,
-  ElMessage,
-  ElNotification,
-  ElScrollbar
-} from 'element-plus'
+import { ElCollapse, ElCollapseItem, ElIcon, ElMessage, ElNotification, ElScrollbar } from 'element-plus'
 import 'element-plus/lib/theme-chalk/index.css'
 
-const components = [
-  ElNotification,
-  ElIcon,
-  ElScrollbar,
-  ElMessage,
-  ElCollapse,
-  ElCollapseItem
-]
+const components = [ElNotification, ElIcon, ElScrollbar, ElMessage, ElCollapse, ElCollapseItem]
 
 /**
  * @author lihh

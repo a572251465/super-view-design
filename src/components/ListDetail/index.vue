@@ -3,11 +3,7 @@
     <h2>{{ content.title }}</h2>
     <div class="list-detail-content">
       <ul>
-        <li
-          v-for="item in content.content"
-          :key="item"
-          @click="copyHandle(item.detail)"
-        >
+        <li v-for="item in content.content" :key="item" @click="copyHandle(item.detail)">
           <i class="el-icon-star-on" :style="{ color: randomBk() }"></i>
           <div>{{ item.detail }}</div>
           <div class="nodes" v-show="item.notes">// {{ item.notes }}</div>
@@ -44,8 +40,7 @@ export default defineComponent({
       if (detailInner.startsWith('$')) {
         detailInner = detailInner.replace(/^\$\s+/gi, '')
       }
-      const inputDom: HTMLInputElement = proxy?.$refs
-        .copyInput as HTMLInputElement
+      const inputDom: HTMLInputElement = proxy?.$refs.copyInput as HTMLInputElement
       /* eslint-disable */
       copyTxt(inputDom, detailInner)
         .then(() => {
