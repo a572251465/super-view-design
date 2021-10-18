@@ -121,6 +121,16 @@ const addressData8: IAddressDetail = {
   ]
 }
 
+const addressData9: IAddressDetail = {
+  title: 'web worker性能优化体验',
+  grade: 4,
+  children: [
+    {
+      address: 'https://mp.weixin.qq.com/s/VQ5MGyLKCJdd888mRVcJ5w'
+    }
+  ]
+}
+
 export {
   addressData,
   addressData1,
@@ -130,5 +140,6 @@ export {
   addressData5,
   addressData6,
   addressData7,
-  addressData8
+  addressData8,
+  addressData9
 }

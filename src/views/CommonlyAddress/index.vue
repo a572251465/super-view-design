@@ -22,7 +22,8 @@ import {
   addressData5,
   addressData6,
   addressData7,
-  addressData8
+  addressData8,
+  addressData9
 } from '@/views/CommonlyAddress/data'
 import { IAddressDetail } from '@/components/AddressDetail/types'
 
@@ -35,7 +36,8 @@ const componentList: IAddressDetail[] = [
   addressData5,
   addressData6,
   addressData7,
-  addressData8
+  addressData8,
+  addressData9
 ]
 
 export default defineComponent({
