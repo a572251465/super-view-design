@@ -49,4 +49,86 @@ const addressData3: IAddressDetail = {
   ]
 }
 
-export { addressData, addressData1, addressData2, addressData3 }
+const addressData4: IAddressDetail = {
+  title: 'ESModule系列演进',
+  grade: 4,
+  children: [
+    {
+      address: 'https://mp.weixin.qq.com/s/0AHmP70HnLUZeJWQlRtUKw'
+    }
+  ]
+}
+
+const addressData5: IAddressDetail = {
+  title: '跨浏览器窗口通信',
+  grade: 4,
+  children: [
+    {
+      address: 'https://mp.weixin.qq.com/s/q9trh3-RjeMAO7rAUc2qJQ'
+    },
+    {
+      address: 'https://github.com/a572251465/page-cor',
+      isImportant: true,
+      notes: '个人代码',
+      desc: '练习demo'
+    }
+  ]
+}
+
+const addressData6: IAddressDetail = {
+  title: '深入解析npm & yarn包管理机制',
+  grade: 4,
+  children: [
+    {
+      address: 'https://mp.weixin.qq.com/s/hRjBAIdtYs4f9IEu8s773A'
+    }
+  ]
+}
+
+const addressData7: IAddressDetail = {
+  title: 'babel相关配置',
+  grade: 5,
+  children: [
+    {
+      address: 'https://zhuanlan.zhihu.com/p/129089156',
+      desc: 'babel把es6送上通天塔'
+    },
+    {
+      address: 'https://mp.weixin.qq.com/s/VJL1m3op567LogrC3fWh4w',
+      desc: '一文彻底读懂babel'
+    },
+    {
+      address: 'https://github.com/a572251465/babel-config-demo',
+      isImportant: true,
+      desc: '个人demo'
+    }
+  ]
+}
+
+const addressData8: IAddressDetail = {
+  title: '原生的web component',
+  grade: 4,
+  children: [
+    {
+      address: 'https://mp.weixin.qq.com/s/o79-iOAJMKX_7a__gmSX2A'
+    },
+    {
+      address: 'https://github.com/a572251465/web-component-demo',
+      notes: '个人代码',
+      isImportant: true,
+      desc: '练习demo'
+    }
+  ]
+}
+
+export {
+  addressData,
+  addressData1,
+  addressData2,
+  addressData3,
+  addressData4,
+  addressData5,
+  addressData6,
+  addressData7,
+  addressData8
+}
