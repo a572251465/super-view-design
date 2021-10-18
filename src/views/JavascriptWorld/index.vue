@@ -3,8 +3,7 @@
     <el-scrollbar>
       <list-template class="list-template">
         <h3>Javascript总结文章地址</h3>
-        <address-detail :addressInfo="addressData"></address-detail>
-        <address-detail :addressInfo="addressData1"></address-detail>
+        <address-detail v-for="(item, key) in componentList" :key="key" :addressInfo="item"></address-detail>
       </list-template>
     </el-scrollbar>
   </div>
@@ -14,8 +13,10 @@
 import { defineComponent } from 'vue'
 import ListTemplate from '@/components/ListTemplate/index.vue'
 import AddressDetail from '@/components/AddressDetail/index.vue'
-import { addressData, addressData1 } from '@/views/JavascriptWorld/data'
+import { addressData, addressData1, addressData2 } from '@/views/JavascriptWorld/data'
+import { IAddressDetail } from '@/components/AddressDetail/types'
 
+const componentList: IAddressDetail[] = [addressData, addressData1, addressData2]
 export default defineComponent({
   name: 'commonCommandGit',
   components: {
@@ -24,8 +25,7 @@ export default defineComponent({
   },
   setup() {
     return {
-      addressData,
-      addressData1
+      componentList
     }
   }
 })

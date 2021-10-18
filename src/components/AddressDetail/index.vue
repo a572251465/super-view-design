@@ -13,11 +13,21 @@
       <div class="title-right">展开</div>
     </div>
     <ul>
-      <li v-for="item in addressInfo.children" :key="item.address">
+      <li v-for="item in addressInfo.children" :key="item.address" class="flex li">
         <i class="el-icon-star-on" :style="{ color: randomBk() }"></i>
-        <a :href="item.address" target="_blank">{{ item.address }}</a>
-        <span class="content" :class="[item.isImportant ? 'active' : '']" v-show="item.notes">{{ item.notes }}</span>
-        <button @click="copyText(item.address)">复制链接</button>
+        <ul class="addressContent">
+          <li>
+            <a :href="item.address" target="_blank">{{ item.address }}</a>
+          </li>
+          <li v-show="item.desc">
+            <span class="spanStyle">{{ item.desc }}</span>
+          </li>
+        </ul>
+
+        <span class="content white-space" :class="[item.isImportant ? 'active' : '']" v-show="item.notes">{{
+          item.notes
+        }}</span>
+        <button class="white-space" @click="copyText(item.address)">复制链接</button>
       </li>
     </ul>
     <input type="text" class="copyText" ref="copy-text" />
@@ -71,6 +81,21 @@ export default defineComponent({
     opacity: 0;
   }
 
+  .flex {
+    display: flex;
+  }
+
+  .white-space {
+    white-space: nowrap;
+  }
+
+  .spanStyle {
+    font-size: 13px;
+    text-shadow: 2px 2px #ccc;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
   .title {
     height: 50px;
     display: flex;
@@ -103,8 +128,11 @@ export default defineComponent({
     padding: 0px 15px;
     width: 100%;
 
+    .li {
+      padding: 5px 0;
+    }
+
     li {
-      height: 45px;
       display: flex;
       justify-content: flex-start;
       align-items: center;
