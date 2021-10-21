@@ -64,8 +64,38 @@ const addressData2: IAddressDetail = {
       notes: '个人文章',
       desc: 'JavaScript深入系列之词法作用域和动态作用域',
       isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/nizx7b/brmrlg',
+      notes: '个人文章',
+      desc: 'JavaScript深入系列之头疼的类型转换(上)',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/nizx7b/dhracb',
+      notes: '个人文章',
+      desc: 'JavaScript深入系列之继承多种方式优缺点',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/nizx7b/gok67a',
+      notes: '个人文章',
+      desc: 'JavaScript深入系列之垃圾回收机制',
+      isImportant: true
     }
   ]
 }
 
-export { addressData, addressData1, addressData2 }
+const addressData3: IAddressDetail = {
+  title: 'JavaScript编程手写',
+  grade: 5,
+  children: [
+    {
+      address: 'https://github.com/a572251465/javascript-program-learning',
+      desc: '实现各种编程以及算法题。例如<重写instanceof>, <实现bind/call/apply>',
+      isImportant: true
+    }
+  ]
+}
+
+export { addressData, addressData1, addressData2, addressData3 }
