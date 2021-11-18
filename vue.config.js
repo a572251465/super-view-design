@@ -5,7 +5,7 @@ module.exports = {
     index: {
       entry: 'src/main.ts',
       template: 'public/index.html',
-      title: '个人博客-PC端'
+      title: '飞上天的🐖'
     }
   }
 }

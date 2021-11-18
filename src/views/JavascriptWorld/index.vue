@@ -13,10 +13,10 @@
 import { defineComponent } from 'vue'
 import ListTemplate from '@/components/ListTemplate/index.vue'
 import AddressDetail from '@/components/AddressDetail/index.vue'
-import { addressData, addressData1, addressData2, addressData3 } from '@/views/JavascriptWorld/data'
+import { addressData3, addressData, addressData1, addressData2 } from '@/views/JavascriptWorld/data'
 import { IAddressDetail } from '@/components/AddressDetail/types'
 
-const componentList: IAddressDetail[] = [addressData, addressData1, addressData2, addressData3]
+const componentList: IAddressDetail[] = [addressData2, addressData3, addressData, addressData1]
 export default defineComponent({
   name: 'commonCommandGit',
   components: {

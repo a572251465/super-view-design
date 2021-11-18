@@ -15,25 +15,25 @@ export interface INavInfo {
 // -- 表示状态
 const navInfoState: INavInfo = {
   navList: [
-    { label: '可视化', value: '1' },
-    { label: 'Css', value: '2' },
-    { label: 'JavaScript', value: '3' },
-    { label: 'Html', value: '4' },
-    { label: 'Vue', value: '5' },
+    { label: 'Vue', value: '1' },
+    { label: 'JavaScript', value: '2' },
+    { label: '可视化', value: '3' },
+    { label: 'Css', value: '4' },
+    { label: 'Html', value: '5' },
     { label: 'Git', value: '6' },
     { label: 'linux', value: '7' },
     { label: '知识文章', value: '8' }
   ],
   navDetailInfo: {
-    '1': [
+    '1': [{ label: '走进vue', path: 'vue-world' }],
+    '2': [{ label: 'JavaScript之子', path: 'javascript-world' }],
+    '3': [
       { label: '半仪表盘', path: 'half-hashboard' },
       { label: '简单柱状图', path: 'simple-bar' },
       { label: '简单折线图', path: 'simple-line' },
       { label: '刻度饼状图', path: 'scale-pie' }
     ],
-    '2': [{ label: 'css的世界', path: 'css-world' }],
-    '3': [{ label: 'JavaScript之子', path: 'javascript-world' }],
-    '5': [{ label: '走进vue', path: 'vue-world' }],
+    '4': [{ label: 'css的世界', path: 'css-world' }],
     '6': [{ label: '常用命令', path: 'commonCommandGit' }],
     '7': [{ label: '常用命令', path: 'commonCommandLinux' }],
     '8': [{ label: '常用地址', path: 'commonly-address' }]
