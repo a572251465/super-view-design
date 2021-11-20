@@ -71,6 +71,18 @@ const addressData2: IAddressDetail = {
       desc: 'vue2源码系列之computed实现原理',
       notes: '个人文章',
       isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/apohhm/wdvc11',
+      desc: 'vue3源码系列之computed实现原理',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/apohhm/hx9qmg',
+      desc: 'vue2源码系列之Vue.$set的原理',
+      notes: '个人文章',
+      isImportant: true
     }
   ]
 }
