@@ -53,6 +53,24 @@ const addressData2: IAddressDetail = {
       desc: 'vue3源码系列之初期化执行流程',
       notes: '个人文章',
       isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/apohhm/om91ld',
+      desc: 'vue2源码系列之watch实现原理',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/apohhm/ef5efq',
+      desc: 'vue3源码系列之watch实现原理',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/apohhm/dwkp57',
+      desc: 'vue2源码系列之computed实现原理',
+      notes: '个人文章',
+      isImportant: true
     }
   ]
 }
