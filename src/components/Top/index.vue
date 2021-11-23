@@ -32,7 +32,15 @@ export default defineComponent({
       currentNav.value = nav
 
       // -- 修改vuex状态
-      store.dispatch(`navInfo/${SETTING_CURRENT_NAV}`, nav)
+      store.dispatch(`navInfo/${SETTING_CURRENT_NAV}`, nav).then(() => {
+        const navDetailInfo = store.getters[`navInfo/navDetailInfo`]
+        const { path } = navDetailInfo[nav][0]
+
+        const matchPath = /^(http)s?:\/\//gi
+        if (matchPath.test(path)) {
+          window.open(path, '_blank')
+        }
+      })
     }
 
     return {

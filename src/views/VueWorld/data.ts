@@ -83,6 +83,30 @@ const addressData2: IAddressDetail = {
       desc: 'vue2源码系列之Vue.$set的原理',
       notes: '个人文章',
       isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/apohhm/pq8h1u',
+      desc: 'vue2源码系列之nextTick实现原理',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/apohhm/ce9aan',
+      desc: 'vue2源码系列之生命周期实现原理',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/apohhm/sh9e5m',
+      desc: 'vue3源码系列之生命周期原理',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/apohhm/gtpd4b',
+      desc: 'vue2源码系列之.stop修饰符原理',
+      notes: '个人文章',
+      isImportant: true
     }
   ]
 }

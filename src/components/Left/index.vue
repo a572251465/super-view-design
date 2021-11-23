@@ -34,6 +34,11 @@ export default defineComponent({
     const skipRouter = (path: string) => {
       currentPath.value = path
 
+      // 判断是跳转地址 还是 跳转路由
+      const matchPath = /^(http)s?:\/\//gi
+      if (matchPath.test(path)) {
+        return
+      }
       // -- 转换路由
       router.push({ path: `/${path}` })
     }

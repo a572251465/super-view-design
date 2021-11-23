@@ -19,10 +19,10 @@ const navInfoState: INavInfo = {
     { label: 'JavaScript', value: '2' },
     { label: '可视化', value: '3' },
     { label: 'Css', value: '4' },
-    { label: 'Html', value: '5' },
     { label: 'Git', value: '6' },
     { label: 'linux', value: '7' },
-    { label: '知识文章', value: '8' }
+    { label: '知识文章', value: '8' },
+    { label: '其他作品', value: '5' }
   ],
   navDetailInfo: {
     '1': [{ label: '走进vue', path: 'vue-world' }],
@@ -36,7 +36,8 @@ const navInfoState: INavInfo = {
     '4': [{ label: 'css的世界', path: 'css-world' }],
     '6': [{ label: '常用命令', path: 'commonCommandGit' }],
     '7': [{ label: '常用命令', path: 'commonCommandLinux' }],
-    '8': [{ label: '常用地址', path: 'commonly-address' }]
+    '8': [{ label: '常用地址', path: 'commonly-address' }],
+    '5': [{ label: '其他作品', path: 'http://lihh-core.top/' }]
   },
   currentNav: '1'
 }
