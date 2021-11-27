@@ -107,6 +107,18 @@ const addressData2: IAddressDetail = {
       desc: 'vue2源码系列之.stop修饰符原理',
       notes: '个人文章',
       isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/apohhm/zrhlrn',
+      desc: 'vue2源码系列之指令原理',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/apohhm/mqpcgv',
+      desc: 'vue2源码系列之自定义事件',
+      notes: '个人文章',
+      isImportant: true
     }
   ]
 }

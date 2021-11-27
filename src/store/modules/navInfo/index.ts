@@ -17,6 +17,7 @@ const navInfoState: INavInfo = {
   navList: [
     { label: 'Vue', value: '1' },
     { label: 'JavaScript', value: '2' },
+    { label: '工程化', value: '9' },
     { label: '可视化', value: '3' },
     { label: 'Css', value: '4' },
     { label: 'Git', value: '6' },
@@ -27,6 +28,7 @@ const navInfoState: INavInfo = {
   navDetailInfo: {
     '1': [{ label: '走进vue', path: 'vue-world' }],
     '2': [{ label: 'JavaScript之子', path: 'javascript-world' }],
+    '9': [{ label: '工程化', path: 'project-world' }],
     '3': [
       { label: '半仪表盘', path: 'half-hashboard' },
       { label: '简单柱状图', path: 'simple-bar' },

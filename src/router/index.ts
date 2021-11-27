@@ -12,6 +12,7 @@ const CommonlyAddress = () => import('@/views/CommonlyAddress/index.vue')
 const CssWorld = () => import('@/views/CssWorld/index.vue')
 const VueWorld = () => import('@/views/VueWorld/index.vue')
 const JavascriptWorld = () => import('@/views/JavascriptWorld/index.vue')
+const ProjectWorld = () => import('@/views/ProjectWorld/index.vue')
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -24,6 +25,13 @@ const routes: Array<RouteRecordRaw> = [
         name: 'half-hashboard',
         components: {
           main: Dashboard
+        }
+      },
+      {
+        path: '/project-world',
+        name: 'project-world',
+        components: {
+          main: ProjectWorld
         }
       },
       {

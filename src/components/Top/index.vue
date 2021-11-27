@@ -77,7 +77,7 @@ export default defineComponent({
     font-style: oblique;
     li {
       display: inline-block;
-      width: 110px;
+      width: 100px;
       text-align: center;
       cursor: pointer;
 
