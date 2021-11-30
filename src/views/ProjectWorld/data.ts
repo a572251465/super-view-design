@@ -36,4 +36,14 @@ const addressData2: IAddressDetail = {
   ]
 }
 
-export { addressData, addressData1, addressData2 }
+const addressData3: IAddressDetail = {
+  title: '轻松理解webpack热更新原理 ',
+  grade: 5,
+  children: [
+    {
+      address: 'https://juejin.cn/post/6844904008432222215'
+    }
+  ]
+}
+
+export { addressData, addressData1, addressData2, addressData3 }
