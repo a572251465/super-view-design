@@ -119,6 +119,12 @@ const addressData2: IAddressDetail = {
       desc: 'vue2源码系列之自定义事件',
       notes: '个人文章',
       isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/apohhm/tgwy5s',
+      desc: 'vue2源码系列之v-model实现原理',
+      notes: '个人文章',
+      isImportant: true
     }
   ]
 }
