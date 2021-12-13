@@ -23,3 +23,24 @@ ul,
 li {
   list-style: none;
 }
+
+html::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+html::-webkit-scrollbar-track,
+.overflowScroll::-webkit-scrollbar-track {
+  background-color: #0cbb92;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb,
+.overflowScroll::-webkit-scrollbar-thumb {
+  background-color: #0cbb92;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}

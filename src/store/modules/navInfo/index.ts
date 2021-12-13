@@ -18,7 +18,6 @@ const navInfoState: INavInfo = {
     { label: 'Vue', value: '1' },
     { label: 'JavaScript', value: '2' },
     { label: '工程化', value: '9' },
-    { label: '可视化', value: '3' },
     { label: 'Css', value: '4' },
     { label: 'Git', value: '6' },
     { label: 'linux', value: '7' },
@@ -29,12 +28,6 @@ const navInfoState: INavInfo = {
     '1': [{ label: '走进vue', path: 'vue-world' }],
     '2': [{ label: 'JavaScript之子', path: 'javascript-world' }],
     '9': [{ label: '工程化', path: 'project-world' }],
-    '3': [
-      { label: '半仪表盘', path: 'half-hashboard' },
-      { label: '简单柱状图', path: 'simple-bar' },
-      { label: '简单折线图', path: 'simple-line' },
-      { label: '刻度饼状图', path: 'scale-pie' }
-    ],
     '4': [{ label: 'css的世界', path: 'css-world' }],
     '6': [{ label: '常用命令', path: 'commonCommandGit' }],
     '7': [{ label: '常用命令', path: 'commonCommandLinux' }],

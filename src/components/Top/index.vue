@@ -55,13 +55,17 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .top {
-  width: 100%;
   height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 10 solid white;
   display: flex;
   background: #100c2a;
-  display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 100;
 
   &-logo {
     width: 60px;

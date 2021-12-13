@@ -44,16 +44,14 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .home {
-  width: 100%;
   height: 100%;
-  &-top {
-    margin-bottom: 10px;
-  }
+
   &-bottom {
-    width: 100%;
-    height: calc(100% - 70px);
+    height: auto;
     display: flex;
     flex-direction: row;
+    border-top: 70px solid transparent;
+    min-height: calc(100% - 70px);
   }
 }
 </style>

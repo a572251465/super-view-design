@@ -75,7 +75,6 @@ export default defineComponent({
 <style lang="scss" scoped>
 .left {
   width: 200px;
-  height: 100%;
   margin-left: 5px;
   box-sizing: border-box;
   background: #100c2a;

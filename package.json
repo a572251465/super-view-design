@@ -6,8 +6,7 @@
     "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "eslint --ext .js,.ts,.vue . && prettier --check .",
-    "lint:fix": "eslint --fix --ext .js,.ts,.vue . && prettier --write .",
-    "prepare": "husky install"
+    "lint:fix": "eslint --fix --ext .js,.ts,.vue . && prettier --write ."
   },
   "dependencies": {
     "@element-plus/icons": "^0.0.11",
@@ -15,6 +14,7 @@
     "echarts": "^5.1.2",
     "element-plus": "^1.0.2-beta.71",
     "eslint-config-airbnb-base": "^14.2.1",
+    "single-throttle": "^1.1.2",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0",
