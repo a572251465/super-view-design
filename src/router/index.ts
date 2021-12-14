@@ -1,10 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Home from '@/views/Home/index.vue'
 
-const Dashboard = () => import('@/views/Dashboard/index.vue')
-const SimpleBar = () => import('@/views/SimpleBar/index.vue')
-const SimpleLine = () => import('@/views/SimpleLine/index.vue')
-const ScalePie = () => import('@/views/ScalePie/index.vue')
 const NotFound = () => import('@/views/NotFound/index.vue')
 const CommonCommandGit = () => import('@/views/CommonCommandGit/index.vue')
 const CommonCommandLinux = () => import('@/views/CommonCommandLinux/index.vue')
@@ -21,31 +17,10 @@ const routes: Array<RouteRecordRaw> = [
     component: Home,
     children: [
       {
-        path: '/half-hashboard',
-        name: 'half-hashboard',
-        components: {
-          main: Dashboard
-        }
-      },
-      {
         path: '/project-world',
         name: 'project-world',
         components: {
           main: ProjectWorld
-        }
-      },
-      {
-        path: '/simple-bar',
-        name: 'simple-bar',
-        components: {
-          main: SimpleBar
-        }
-      },
-      {
-        path: '/simple-line',
-        name: 'simple-line',
-        components: {
-          main: SimpleLine
         }
       },
       {
@@ -67,13 +42,6 @@ const routes: Array<RouteRecordRaw> = [
         name: 'commonly-address',
         components: {
           main: CommonlyAddress
-        }
-      },
-      {
-        path: '/scale-pie',
-        name: 'scale-pie',
-        components: {
-          main: ScalePie
         }
       },
       {

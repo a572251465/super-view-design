@@ -199,6 +199,54 @@ const addressData3: IAddressDetail = {
   grade: 5,
   children: [
     {
+      address: 'https://www.yuque.com/lihaohao-f0jle/bgqx7m/mygtu9',
+      desc: '手写系列之深度拷贝',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/bgqx7m/qp13fs',
+      desc: '手写系列之jsonp的实现',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/bgqx7m/gccsk7',
+      desc: '手写系列之剔除左右空格',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/bgqx7m/or6go5',
+      desc: '手写系列之数组去重',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/bgqx7m/pc2x0i',
+      desc: '手写系列之发布订阅模式',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/bgqx7m/lxn9cq',
+      desc: '手写系列之串行Promise执行',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/bgqx7m/cq3dst',
+      desc: '手写系列之new的实现过程',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
+      address: 'https://www.yuque.com/lihaohao-f0jle/bgqx7m/rrssb9',
+      desc: '手写系列之compose的实现',
+      notes: '个人文章',
+      isImportant: true
+    },
+    {
       address: 'https://www.yuque.com/lihaohao-f0jle/bgqx7m/ikfggv',
       desc: '手写系列之a == 1 && a == 2 && a == 3',
       notes: '个人文章',
