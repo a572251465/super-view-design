@@ -46,4 +46,14 @@ const addressData3: IAddressDetail = {
   ]
 }
 
-export { addressData, addressData1, addressData2, addressData3 }
+const addressData4: IAddressDetail = {
+  title: '构建优化篇~~DllPlugin到底为我们做了什么',
+  grade: 5,
+  children: [
+    {
+      address: 'https://juejin.cn/post/7043653757053173797'
+    }
+  ]
+}
+
+export { addressData, addressData1, addressData2, addressData3, addressData4 }
